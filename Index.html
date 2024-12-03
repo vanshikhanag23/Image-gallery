@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .gallery-heading {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            padding: 4% 2%;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        .box {
+            flex: 1;
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 0 2%;
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+            line-height: 0;
+            position: relative;
+        }
+        .box > img {    
+            width: 200%;
+            height: calc(100% - 10vh);
+            object-fit: cover; 
+            transition: 0.5s;
+        }
+        .box > span {
+            font-size: 1.5em;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 0.5s;
+            max-width: 90%;
+            line-height: 1.5;
+        }
+        .box:hover { 
+            flex: 1 1 50%; 
+        }
+        .box:hover > img {
+            width: 100%;
+            height: 100%;
+        }
+        .box:hover > span {
+            opacity: 1;
+        }
+        .box > span > strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="gallery-heading"> ℑ𝔪𝔞𝔤𝔢 𝔊𝔞𝔩𝔩𝔢𝔯𝔶</h1>
+    <div class="container">
+        <div class="box">
+            <img src="photo1.jpg">
+            <span>
+                <strong>Chitrakoot</strong>
+                "Chitrakoot is known for its stunning waterfall, often called the 'Niagara of India'."
+            </span>
+        </div>
+        <div class="box">
+            <img src="photo2.webp">
+            <span>
+                <strong>Tirathgarh</strong>
+                "Tirathgarh is famous for its majestic tiered waterfall, a popular tourist spot in Chhattisgarh."
+            </span>
+        </div>
+        <div class="box">
+            <img src="photo3.jpg">
+            <span>
+                <strong>Bacheli</strong>
+                "Bacheli is a picturesque town surrounded by hills, rich in mineral resources."
+            </span>
+        </div>
+        <div class="box">
+            <img src="photo4.jpg">
+            <span>
+                <strong>Kirandul</strong>
+                "Kirandu is known for its ancient ruins and historical significance in the region."
+            </span>
+        </div>
+        <div class="box">
+            <img src="photo5.jpg">
+            <span>
+                <strong>Dholkal</strong>
+                "Dholkal is famous for the ancient Ganesha statue perched atop a hill, offering breathtaking views."
+            </span>
+        </div>
+        <div class="box">
+            <img src="photo6.jpg">
+            <span>
+                <strong>Keshkal</strong>
+                "Keshkal is a scenic region with dense forests and mesmerizing natural beauty."
+            </span>
+        </div>
+        <div class="box">
+            <img src="photo7.webp">
+            <span>
+                <strong>Handawada Waterfall</strong>
+                "Handawada waterfall is a hidden gem, offering tranquility and picturesque views."
+            </span>
+        </div>
+    </div>
+</body>
+</html>
